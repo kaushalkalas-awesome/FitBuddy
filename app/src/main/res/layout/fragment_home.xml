@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Welcome Message Card -->
+
+        <TextView
+            android:id="@+id/textViewWelcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome, "
+            android:textSize="24sp"
+            android:textColor="@android:color/black"
+            android:padding="16dp" />
+
+    <!-- Calories Burned Card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/calories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewWelcome"
+        android:layout_marginTop="16dp"
+        android:elevation="4dp">
+
+        <TextView
+            android:id="@+id/textViewCaloriesBurned"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Calories Burned: 0"
+            android:textColor="@android:color/black"
+            android:padding="16dp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Step Count Card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/step"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calories"
+        android:layout_marginTop="16dp"
+        android:elevation="4dp">
+
+        <TextView
+            android:id="@+id/textViewStepCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Step Count: 0"
+            android:textColor="@android:color/black"
+            android:padding="16dp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Distance Traveled Card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/distance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/step"
+        android:layout_marginTop="16dp"
+        android:elevation="4dp">
+
+        <TextView
+            android:id="@+id/textViewDistance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Distance Traveled: 0.00 km"
+            android:textColor="@android:color/black"
+            android:padding="16dp" />
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

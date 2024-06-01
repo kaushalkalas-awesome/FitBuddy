@@ -1,0 +1,58 @@
+<!-- fragment_track.xml -->
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarThumbVertical="@null"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Step Count BarChart -->
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/barChartStepCount"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_marginTop="16dp" />
+
+        <!-- Calories Burned BarChart -->
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/barChartCaloriesBurned"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_below="@id/barChartStepCount"
+            android:layout_marginTop="16dp" />
+
+        <!-- Distance Traveled BarChart -->
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/barChartDistanceTraveled"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_below="@id/barChartCaloriesBurned"
+            android:layout_marginTop="16dp"
+            android:scrollbars="none" />
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/pieChart"
+            android:layout_below="@+id/barChartDistanceTraveled"
+            android:layout_width="match_parent"
+            android:layout_height="300dp" />
+
+        <!-- TextView to display no data message -->
+        <TextView
+            android:id="@+id/textViewNoData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pieChart"
+            android:layout_centerHorizontal="true"
+            android:text="No data available"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</ScrollView>

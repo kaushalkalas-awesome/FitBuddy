@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/img"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/nav_feed"
+        android:icon="@drawable/img_1"
+        android:title="Feed" />
+
+    <item
+        android:id="@+id/nav_step_counter"
+        android:icon="@drawable/img_2"
+        android:title="Step Counter" />
+
+    <item
+        android:id="@+id/nav_track"
+        android:icon="@drawable/img_3"
+        android:title="Track" />
+
+    <item
+        android:id="@+id/nav_settings"
+        android:icon="@drawable/img_4"
+        android:title="Profile" />
+</menu>
